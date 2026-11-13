@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Page not found — Beauty Unique Outdoor Day Spa</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <style>
+    body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#FAF8F5;color:#2C2C2C;font-family:Inter,Arial,sans-serif;text-align:center;padding:24px}
+    h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:3rem;color:#2D4739;margin:0 0 12px}
+    p{margin:0 0 24px;color:#6b6b6b}
+    a{display:inline-block;background:#2D4739;color:#fff;text-decoration:none;padding:14px 32px;font-size:12px;letter-spacing:.2em;text-transform:uppercase}
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Page not found</h1>
+    <p>The page you are looking for has moved or does not exist.</p>
+    <a id="home" href="/">Back to home</a>
+  </main>
+  <script>
+    // On a github.io project URL the site lives under /<repo>/, not /
+    if (location.hostname.endsWith('github.io')) {
+      var repo = location.pathname.split('/')[1];
+      if (repo) document.getElementById('home').href = '/' + repo + '/';
+    }
+  </script>
+</body>
+</html>
